@@ -1,0 +1,137 @@
+/* ----------------- Page Layout ----------------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #b3e5fc, #7986cb);
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* ----------------- Navbar ----------------- */
+
+.navbar {
+  background: linear-gradient(to right, #004d40, #00796b);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #00695c;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #004d40;
+}
+
+/* ----------------- Form Container ----------------- */
+
+.form-container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+}
+
+.form-container {
+  background: transparent;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: none;
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+}
+
+/* ----------------- Form Layout ----------------- */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* For side-by-side input rows */
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-row .form-field {
+  flex: 1;
+}
+
+/* Generic Input Styles */
+.form-field,
+input,
+select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+/* ----------------- Buttons ----------------- */
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.form-button {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #e74c3c;
+}
+
+.reset-button {
+  background-color: #ff7043;
+}
+
+.reset-button:hover {
+  background-color: #f4511e;
+}
